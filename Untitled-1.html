@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Parallax Website</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .parallax {
+      background-image: url('background.jpg');
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+    }
+
+    .menu {
+      background-color: purple;
+      padding: 20px;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      margin-right: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="parallax"></div>
+
+  <div class="menu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <div id="home" style="height: 100vh;">
+    <h1>Home Page</h1>
+    <!-- Add your content here -->
+  </div>
+
+  <div id="about" style="height: 100vh;">
+    <h1>About Page</h1>
+    <!-- Add your content here -->
+  </div>
+
+  <div id="services" style="height: 100vh;">
+    <h1>Services Page</h1>
+    <!-- Add your content here -->
+  </div>
+
+  <div id="contact" style="height: 100vh;">
+    <h1>Contact Page</h1>
+    <!-- Add your content here -->
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>
+  <script>
+    angular.module('myApp', []);
+  </script>
+</body>
+
+</html>
